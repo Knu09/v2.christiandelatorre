@@ -1,0 +1,50 @@
+.hero-style-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+    max-width: 1000px;
+}
+
+.upper-header-content h2 {
+    color: var(--clr-primary-cyan);
+    font-size: clamp(12px, 2vw, var(--font-size-3xs));
+    margin-bottom: 1rem;
+    text-transform:uppercase;
+
+}
+
+.main-header-content h1 {
+    font-size: clamp(var(--font-size-md), 6vw, var(--font-size-5xl));
+    margin-bottom: 0;
+    letter-spacing: -2px;
+}
+
+.main-header-content h1:last-child {
+    color: var(--clr-primary-semi-white);
+}
+
+.main-header-content h1 span {
+    background: linear-gradient(90deg, var(--clr-primary-cyan), var(--clr-secondary-blue));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.details-content p {
+    color: var(--clr-secondary-semi-white70);
+    font-family: Open Sans, sans-serif;
+    font-size: clamp(var(--font-size-4xs), 4vw,var(--font-size-3xs)) ;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 1rem;
+    max-width: 520px;
+}
+
+.project-btn {
+    margin-top: 30px;
+
+    width: 200px;
+    height: 60px;
+}

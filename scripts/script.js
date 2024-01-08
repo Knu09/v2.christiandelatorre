@@ -1,0 +1,139 @@
+const btnTabs = document.querySelectorAll("#about .tab-link");
+const allContents = document.querySelectorAll("#about .tab-contents");
+
+btnTabs.forEach((tab, index) => {
+    tab.addEventListener('click', (e) => {
+        btnTabs.forEach(tab => {
+            tab.classList.remove('active');
+        });
+        tab.classList.add('active');
+
+        let activeLine = document.querySelector('.active-line');
+        activeLine.style.width = e.target.offsetWidth + "px";
+        activeLine.style.left = e.target.offsetLeft + "px";
+
+        allContents.forEach(content => {
+            content.classList.remove('active');
+        })
+        allContents[index].classList.add('active')
+    })
+});
+
+const experienceBtnTabs = document.querySelectorAll('.experience-tab-link');
+const experienceAllContents = document.querySelectorAll('#experience .tab-contents');
+const mediaQueryWidth = window.matchMedia("(max-width: 600px)");
+
+let activeLine = document.querySelector('.active-line2');
+let activeTabLink = document.querySelector(".experience-tab-link.active");
+
+function updateActiveLineStyles(clickedTab) {
+    if (!mediaQueryWidth.matches) {
+        activeLine.style.top = clickedTab.offsetTop + "px";
+        activeLine.style.height = clickedTab.offsetHeight + "px";
+        activeLine.style.width = "2px";
+        activeLine.style.left = "0px"; // Assuming you want to reset it to 0px
+    } else {
+        activeLine.style.width = clickedTab.offsetWidth + "px";
+        activeLine.style.left = clickedTab.offsetLeft + "px";
+        activeLine.style.height = "2px";
+        activeLine.style.top = "54px";
+    }
+}
+
+experienceBtnTabs.forEach((tab, index) => {
+    tab.addEventListener('click', (e) => {
+        const clickedTab = e.currentTarget;
+
+        experienceBtnTabs.forEach(tab => {
+            tab.classList.remove('active');
+        });
+        clickedTab.classList.add('active');
+        activeTabLink = clickedTab;
+
+        updateActiveLineStyles(clickedTab);
+
+        experienceAllContents.forEach(content => {
+            content.classList.remove('active');
+        });
+        experienceAllContents[index].classList.add('active');
+    });
+});
+
+const resizeObserver = new ResizeObserver(entries => {
+    const windowWidth = entries[0].contentRect.width;
+    if (windowWidth <= 600 && activeTabLink) {
+        updateActiveLineStyles(activeTabLink);
+    } else {
+        updateActiveLineStyles(activeTabLink);
+    }
+});
+
+resizeObserver.observe(document.body);
+
+const navbarToggler = document.querySelector(".navbar-toggler");
+const navbarMenu = document.querySelector(".navbar-subpages");
+const blurMainBody = document.body;
+const navLink = document.querySelectorAll(".navbar-subpages li a")
+
+console.log(navLink)
+
+navbarToggler.addEventListener('click', () => {
+    navbarMenu.classList.toggle('active');
+    navbarToggler.classList.toggle('active');
+    document.documentElement.classList.toggle('active');
+    blurMainBody.classList.toggle('blur');
+})
+
+navLink.forEach(link => {
+    link.addEventListener('click', () => {
+        navbarMenu.classList.remove('active');
+        navbarToggler.classList.remove('active');
+        document.documentElement.classList.remove('active');
+        blurMainBody.classList.remove('blur');
+    })
+})
+
+
+// SCROLL NAVBAR EFFECTS
+const navBar = document.querySelector('nav.navbar')
+const aboutSection = document.getElementById('about');
+const aboutCircle = document.querySelector('.circle-about')
+
+const experienceSection = document.getElementById('experience')
+const experienceCircle = document.querySelector('.circle-experience')
+
+const projectsSection = document.getElementById('projects')
+const projectsCircle = document.querySelector('.circle-projects')
+
+const contactSection = document.getElementById('contact')
+const contactCircle = document.querySelector('.circle-contact')
+
+
+let lastScrollTop = 0;
+
+window.addEventListener('scroll', () => {
+    let scrollTop = window.pageXOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        navBar.style.top = "-80px";
+    } else {
+        navBar.style.top = "0";
+    }
+    lastScrollTop = scrollTop;
+
+    navBar.classList.toggle('sticky-nav', window.scrollY > 0);
+
+    toggleCircleActive(aboutSection, aboutCircle);
+    toggleCircleActive(experienceSection, experienceCircle);
+    toggleCircleActive(projectsSection, projectsCircle);
+    toggleCircleActive(contactSection, contactCircle);
+}
+);
+
+function toggleCircleActive(section, circle) {
+    const isInSection = (window.scrollY + window.innerHeight - 500) >= section.offsetTop &&
+        (window.scrollY + window.innerHeight - 500) < section.offsetTop + section.offsetHeight;
+    circle.classList.toggle('active', isInSection);
+
+}
+
