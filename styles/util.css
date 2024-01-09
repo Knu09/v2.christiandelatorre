@@ -14,8 +14,8 @@
 
 /* FONT SIZES */
 :root {
-    --font-size-5xs: 0.65rem;
-    --font-size-4xs: .75rem;
+    --font-size-5xs: 12px;
+    --font-size-4xs: 14px;
     --font-size-3xs: 1rem;
     --font-size-2xs: 1.15;
     --font-size-xs: 1.25rem;
@@ -27,6 +27,10 @@
     --font-size-3xl: 2.75rem;
     --font-size-4xl: 3rem;
     --font-size-5xl: 4rem;
+}
+
+:root {
+    counter-reset: headings;
 }
 
 /*

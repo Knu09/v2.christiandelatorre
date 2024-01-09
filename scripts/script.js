@@ -137,3 +137,6 @@ function toggleCircleActive(section, circle) {
 
 }
 
+
+// PROJECTS
+let projectsHTML = '';

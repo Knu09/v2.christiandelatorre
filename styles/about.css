@@ -15,7 +15,8 @@
 }
 
 .heading-number {
-    font-size: var(--font-size-md)
+    font-size: var(--font-size-md);
+    margin-bottom: 2em;
 }
 
 #about .details-content p {
@@ -183,7 +184,7 @@
     border-radius: 25%;
     border-bottom-right-radius: 5px;
     z-index: 100;
-    opacity: .25;
+    opacity: .32;
     backdrop-filter: blur(5px);
     background: linear-gradient(145deg, var(--clr-primary-cyan), var(--clr-secondary-blue));
     transition: .25s ease-in-out;
