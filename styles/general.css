@@ -69,6 +69,10 @@ strong {
     font-weight: normal;
 }
 
+.vertical-line {
+
+}
+
 ::-webkit-scrollbar {
     width: 12px;
     height: 12px;

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="icon" href="images/icon_logo.png">
@@ -17,8 +17,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Karla:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@100;200;400;500;600;700;800&family=Roboto:wght@100;400;700&family=Sometype+Mono&display=swap"
-        rel="stylesheet">
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Karla:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@100;200;400;500;600;700;800&family=Roboto:wght@100;400;700&family=Sometype+Mono&display=swap"
+            rel="stylesheet">
 
     <!--Styles-->
     <link rel="stylesheet" href="styles/general.css">
@@ -30,378 +30,400 @@
     <link rel="stylesheet" href="styles/projects.css">
 
     <!-- SCRIPTS -->
+    <script src="scripts/projects.js" defer></script>
     <script src="scripts/script.js" defer></script>
 
     <!--FONT AWESOME-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
     <title>Christian De La Torre</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand fixed-top">
-            <div class="container-fluid navbar-contents">
-                <div class="navbar-header d-flex flex-row justify-content-center">
-                    <a class="navbar-brand" href="#">
-                        <img src="images/C_logo.png" alt="LOGO">
-                    </a>
-                </div>
-                <div class="navbar-subpages-wrapper container-fuid">
-                    <ul class="navbar-nav navbar-subpages">
-                        <li class="nav-item"><a class="nav-link" href="#about"><span class="nav-number">01.</span>
-                                About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#experience"><span class="nav-number">02.</span>
-                                Experience</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects"><span class="nav-number">03.</span>
-                                Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact"><span class="nav-number">04.</span>
-                                Contact</a></li>
-                        <!-- <li class="d-flex align-items-center"><div class="vertical-line"></div></li> -->
-                        <li class="nav-item stroke-container">
-                            <a href="#" class="stroke-button button-stroke">
-                                <svg>
-                                    <rect x="3" y="3" rx="25" ry="25"></rect>
-                                    <defs>
-                                        <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="100%">
-                                            <stop offset="0%"
-                                                style="stop-color:var(--clr-primary-cyan);stop-opacity:1" />
-                                            <stop offset="100%"
-                                                style="stop-color:var(--clr-secondary-blue);stop-opacity:1" />
-                                        </linearGradient>
-                                    </defs>
-                                    <div class="text-stroke animated-text">
-                                        <h2>
-                                            <span>RESUME ></span><span>REXGEN ></span><span>#3KRM3 ></span><span>ARKU#K
-                                                ></span><span>R3SOME ></span>
-                                        </h2>
-                                    </div>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="navbar-toggler">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <aside>
-        <div class="sidebar-rightStyle-container">
-            <ul class="circle-bar-wrapper">
-                <li class="sidebar-vertical-line"></li>
-                <li>
-                    <a href="#about" class="sidebar-about">
-                        <span class="circle circle-about"></span>
-                        <span class="circle-label">About</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#experience" class="round-sidebar sidebar-experience">
-                        <span class="circle circle-experience"></span>
-                        <span class="circle-label">experience</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#projects" class="round-sidebar sidebar-project">
-                        <span class="circle circle-projects"></span>
-                        <span class="circle-label">projects</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="contact" class="round-sidebar sidebar-contact">
-                        <span class="circle circle-contact"></span>
-                        <span class="circle-label">contact</span>
-                    </a>
-                </li>
-                <li class="sidebar-vertical-line"></li>
-            </ul>
-        </div>
-    </aside>
-    <main>
-        <section class="hero-style-container">
-            <div class="upper-header-content">
-                <h2>Hi, MY NAME IS</h2>
-            </div>
-            <div class="main-header-content">
-                <h1 class="header-name">CHRISTIAN DE LA TORRE</h1>
-                <h1>I am a dedicated <span>Developer</span></h1>
-            </div>
-            <div class="details-content">
-                <p>I code and develop innovative things. I am a dedicated student
-                    at the <strong>University of Negros Occidental - Recoletos</strong>, currently
-                    pursuing a degree in <strong>Computer Science</strong>.
-                </p>
-            </div>
-            <div class="button-content">
-                <a href="#projects" class="stroke-button button-stroke project-btn">
-                    <svg>
-                        <rect x="5" y="3" rx="25" ry="25"></rect>
-                        <defs>
-                            <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:var(--clr-primary-cyan);stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:var(--clr-secondary-blue);stop-opacity:1" />
-                            </linearGradient>
-                        </defs>
-                        <div class="text-stroke animated-text">
-                            <h2>
-                                <span>CHECK MY PROJECTS</span><span>CH3OW HY PUOJFCTA</span><span>ZHJUL LA
-                                    PWXJ3DAY</span><span>SJQUV NW JREJEATS</span><span>CH3CK MV PD0J3CTS</span>
-                            </h2>
-                        </div>
-                    </svg>
+<header>
+    <nav class="navbar navbar-expand fixed-top">
+        <div class="container-fluid navbar-contents">
+            <div class="navbar-header d-flex flex-row justify-content-center">
+                <a class="navbar-brand" href="#">
+                    <img src="images/C_logo.png" alt="LOGO">
                 </a>
             </div>
-        </section>
-        <section id="about" class="style-container about-style-container">
-            <h2 class="heading-number"> About Me</h2>
-            <div class="about-inner-section">
-                <div class="about-content about-left-content">
+            <div class="navbar-subpages-wrapper container-fuid">
+                <ul class="navbar-nav navbar-subpages">
+                    <li class="nav-item"><a class="nav-link" href="#about"><span class="nav-number">01.</span>
+                        About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience"><span class="nav-number">02.</span>
+                        Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects"><span class="nav-number">03.</span>
+                        Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><span class="nav-number">04.</span>
+                        Contact</a></li>
+                    <!-- <li class="d-flex align-items-center"><div class="vertical-line"></div></li> -->
+                    <li class="nav-item stroke-container">
+                        <a href="#" class="stroke-button button-stroke">
+                            <svg>
+                                <rect x="3" y="3" rx="25" ry="25"></rect>
+                                <defs>
+                                    <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="100%">
+                                        <stop offset="0%"
+                                              style="stop-color:var(--clr-primary-cyan);stop-opacity:1"/>
+                                        <stop offset="100%"
+                                              style="stop-color:var(--clr-secondary-blue);stop-opacity:1"/>
+                                    </linearGradient>
+                                </defs>
+                                <div class="text-stroke animated-text">
+                                    <h2>
+                                        <span>RESUME ></span><span>REXGEN ></span><span>#3KRM3 ></span><span>ARKU#K
+                                                ></span><span>R3SOME ></span>
+                                    </h2>
+                                </div>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="navbar-toggler">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<aside>
+    <div class="sidebar-rightStyle-container">
+        <ul class="circle-bar-wrapper">
+            <li class="sidebar-vertical-line"></li>
+            <li>
+                <a href="#about" class="sidebar-about">
+                    <span class="circle circle-about"></span>
+                    <span class="circle-label">About</span>
+                </a>
+            </li>
+            <li>
+                <a href="#experience" class="round-sidebar sidebar-experience">
+                    <span class="circle circle-experience"></span>
+                    <span class="circle-label">experience</span>
+                </a>
+            </li>
+            <li>
+                <a href="#projects" class="round-sidebar sidebar-project">
+                    <span class="circle circle-projects"></span>
+                    <span class="circle-label">projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="contact" class="round-sidebar sidebar-contact">
+                    <span class="circle circle-contact"></span>
+                    <span class="circle-label">contact</span>
+                </a>
+            </li>
+            <li class="sidebar-vertical-line"></li>
+        </ul>
+    </div>
+</aside>
+<main>
+    <section class="hero-style-container">
+        <div class="upper-header-content">
+            <h2>Hi, MY NAME IS</h2>
+        </div>
+        <div class="main-header-content">
+            <h1 class="header-name">CHRISTIAN DE LA TORRE</h1>
+            <h1>I am a dedicated <span>Developer</span></h1>
+        </div>
+        <div class="details-content">
+            <p>I code and develop innovative things. I am a dedicated student
+                at the <strong>University of Negros Occidental - Recoletos</strong>, currently
+                pursuing a degree in <strong>Computer Science</strong>.
+            </p>
+        </div>
+        <div class="button-content">
+            <a href="#projects" class="stroke-button button-stroke project-btn">
+                <svg>
+                    <rect x="5" y="3" rx="25" ry="25"></rect>
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:var(--clr-primary-cyan);stop-opacity:1"/>
+                            <stop offset="100%" style="stop-color:var(--clr-secondary-blue);stop-opacity:1"/>
+                        </linearGradient>
+                    </defs>
+                    <div class="text-stroke animated-text">
+                        <h2>
+                            <span>CHECK MY PROJECTS</span><span>CH3OW HY PUOJFCTA</span><span>ZHJUL LA
+                                    PWXJ3DAY</span><span>SJQUV NW JREJEATS</span><span>CH3CK MV PD0J3CTS</span>
+                        </h2>
+                    </div>
+                </svg>
+            </a>
+        </div>
+    </section>
+    <section id="about" class="style-container about-style-container">
+        <h2 class="heading-number"> About Me</h2>
+        <div class="about-inner-section">
+            <div class="about-content about-left-content">
+                <div class="details-content">
+                    <p>
+                        My name is Christian L. De La Torre, I started experiencing
+                        coding in August 2022 during the first Semester of my first year in college.
+                        I encountered several challenges along the way. However, these challenges strive
+                        me hard to explore more about coding and fueled my passion for programming.
+                    </p>
+                </div>
+                <div class="tab-titles">
+                    <button class="tab-link active">
+                        TECHNOLOGIES
+                    </button>
+                    <button class="tab-link">
+                        EDUCATION
+                    </button>
+                    <div class="active-line"></div>
+                </div>
+                <div class="tab-contents active" id="technologies">
+                    <div class="columns languages">
+                        <ul>
+                            <li class="list-title">LANGUAGES</li>
+                            <li class="list-item">JavaScript (ES6+)</li>
+                            <li class="list-item">HTML/CSS</li>
+                            <li class="list-item">SQL</li>
+                            <li class="list-item">Java</li>
+                        </ul>
+                    </div>
+                    <div class="columns frameworks">
+                        <ul>
+                            <li class="list-title">FRAMEWORKS</li>
+                            <li class="list-item">Boostrap</li>
+                            <li class="list-item">jQuery</li>
+                        </ul>
+                    </div>
+                    <div class="columns languages">
+                        <ul>
+                            <li class="list-title">TOOLS</li>
+                            <li class="list-item">Bash</li>
+                            <li class="list-item">Git & Github</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-contents" id="education">
+                    <div class="rows columns languages">
+                        <ul>
+                            <li class="list-title">2022-2023 1st Semester</li>
+                            <li class="list-item">Programming basic fundamentals in Python and Java</li>
+                        </ul>
+                    </div>
+                    <div class="rows columns languages">
+                        <ul>
+                            <li class="list-title">2022-2023 2nd Semester</li>
+                            <li class="list-item">Java GUI framework</li>
+                        </ul>
+                    </div>
+                    <div class="rows columns languages">
+                        <ul>
+                            <li class="list-title">2023-2024 1st Semester</li>
+                            <li class="list-item">Programming basic fundamentals in Python and Java</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content about-right-content">
+                <div class="profile-picture">
+                    <div class="profile-wrapper">
+                        <img src="images/christian-image.png" alt="Profile Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience" class="style-container experience-style-container">
+        <h2 class="heading-number experience-num"> My Industry Experience</h2>
+        <div class="details-content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <div class="inner-experience-container">
+            <div class="tab-titles">
+                <button class="tab-link experience-tab-link active">
+                    Python
+                </button>
+                <button class="tab-link experience-tab-link">
+                    Java
+                </button>
+                <button class="tab-link experience-tab-link">
+                    JavaScript
+                </button>
+                <button class="tab-link experience-tab-link">
+                    HTML/CSS
+                </button>
+                <button class="tab-link experience-tab-link">
+                    SQL
+                </button>
+                <div class="active-line2"></div>
+            </div>
+            <div class="tab-contents active">
+                <div class="content-header">
+                    <h1>Python basic fundamentals</h1>
+                    <p>August 2022</p>
+                </div>
+                <div>
+                    <ul>
+                        <li class="list-item">
+                            Created an <strong>ATM program</strong> that allows users to check their balance,
+                            withdraw money, and transfer funds between accounts.
+                        </li>
+                        <li class="list-item">
+                            Created a simple game <strong>Tic Tac Toe</strong> and <strong>Rock Paper
+                            Scissors</strong>.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-contents">
+                <div class="content-header">
+                    <h1>Java</h1>
+                    <p>October 2022 - Present</p>
+                </div>
+                <div>
+                    <ul>
+                        <li class="list-item">
+                            Created a Graphical User Interface of 'F.L.A.M.E.S' game and programmed its logic.
+                        </li>
+                        <li class="list-item">
+                            Created a Graphical User Interface and implemented a functional converter from Infex to
+                            Postfix notation.
+                        </li>
+                        <li class="list-item">
+                            Studied the intricacies and complexities of <strong>Advanced Object-Oriented
+                            Programming</strong>.
+                        </li>
+                        <li class="list-item">
+                            Engaged in comprehensive studies into the fundamental principles of <strong>Data
+                            Structures and Algorithms</strong>, and acquired an understanding of their intricate
+                            concepts.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="style-container projects-style-container projects">
+        <h2 class="heading-number projects-num"> Recently Projects I've Built</h2>
+        <ul>
+            <li class="project-inner-content">
+                <div class="projects-content project-picture-section">
+                    <a target="_blank" href="https://Knu09.github.io/nanotech/" class="profile-wrapper">
+                        <img src="images/nanotech_img.png" alt="NANOTECH WEB IMAGE">
+                    </a>
+                </div>
+                <div class="projects-content project-details-section">
+                    <div class="upper-header-content">
+                        <h2 class="project-upper-header">FEATURED PROJECT</h2>
+                    </div>
+                    <div class="main-header-content">
+                        <a target="_blank" href="https://knu09.github.io/nanotech/">
+                            <h1 class="project-title">NANOTECH</h1>
+                        </a>
+                    </div>
                     <div class="details-content">
-                        <p>
-                            My name is Christian L. De La Torre, I started experiencing
-                            coding in August 2022 during the first Semester of my first year in college.
-                            I encountered several challenges along the way. However, these challenges strive
-                            me hard to explore more about coding and fueled my passion for programming.
+                        <p class="project-description">A partial website BootCamp that provides a gateway to a world of
+                            coding knowledge.
+                            NANOTECH provides a comprehensive BootCamp Website for aspiring students,
+                            programmers, and seasoned developers who can access different kinds of
+                            courses that consist live coding tutorial, video courses, and coding libraries.
                         </p>
                     </div>
-                    <div class="tab-titles">
-                        <button class="tab-link active">
-                            TECHNOLOGIES
-                        </button>
-                        <button class="tab-link">
-                            EDUCATION
-                        </button>
-                        <div class="active-line"></div>
-                    </div>
-                    <div class="tab-contents active" id="technologies">
-                        <div class="columns languages">
-                            <ul>
-                                <li class="list-title">LANGUAGES</li>
-                                <li class="list-item">JavaScript (ES6+)</li>
-                                <li class="list-item">HTML/CSS</li>
-                                <li class="list-item">SQL</li>
-                                <li class="list-item">Java</li>
-                            </ul>
-                        </div>
-                        <div class="columns frameworks">
-                            <ul>
-                                <li class="list-title">FRAMEWORKS</li>
-                                <li class="list-item">Boostrap</li>
-                                <li class="list-item">jQuery</li>
-                            </ul>
-                        </div>
-                        <div class="columns languages">
-                            <ul>
-                                <li class="list-title">TOOLS</li>
-                                <li class="list-item">Bash</li>
-                                <li class="list-item">Git & Github</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <div class="rows columns languages">
-                            <ul>
-                                <li class="list-title">2022-2023 1st Semester</li>
-                                <li class="list-item">Programming basic fundamentals in Python and Java</li>
-                            </ul>
-                        </div>
-                        <div class="rows columns languages">
-                            <ul>
-                                <li class="list-title">2022-2023 2nd Semester</li>
-                                <li class="list-item">Java GUI framework</li>
-                            </ul>
-                        </div>
-                        <div class="rows columns languages">
-                            <ul>
-                                <li class="list-title">2023-2024 1st Semester</li>
-                                <li class="list-item">Programming basic fundamentals in Python and Java</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-content about-right-content">
-                    <div class="profile-picture">
-                        <div class="profile-wrapper">
-                            <img src="images/christian-image.png" alt="Profile Image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="experience" class="style-container experience-style-container">
-            <h2 class="heading-number experience-num"> My Industry Experience</h2>
-            <div class="details-content">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </div>
-            <div class="inner-experience-container">
-                <div class="tab-titles">
-                    <button class="tab-link experience-tab-link active">
-                        Python
-                    </button>
-                    <button class="tab-link experience-tab-link">
-                        Java
-                    </button>
-                    <button class="tab-link experience-tab-link">
-                        JavaScript
-                    </button>
-                    <button class="tab-link experience-tab-link">
-                        HTML/CSS
-                    </button>
-                    <button class="tab-link experience-tab-link">
-                        SQL
-                    </button>
-                    <div class="active-line2"></div>
-                </div>
-                <div class="tab-contents active">
-                    <div class="content-header">
-                        <h1>Python basic fundamentals</h1>
-                        <p>August 2022</p>
-                    </div>
-                    <div>
+                    <div class="technologies-used">
                         <ul>
-                            <li class="list-item">
-                                Created an <strong>ATM program</strong> that allows users to check their balance,
-                                withdraw money, and transfer funds between accounts.
-                            </li>
-                            <li class="list-item">
-                                Created a simple game <strong>Tic Tac Toe</strong> and <strong>Rock Paper
-                                    Scissors</strong>.
-                            </li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Bootstrap</li>
                         </ul>
                     </div>
-                </div>
-                <div class="tab-contents">
-                    <div class="content-header">
-                        <h1>Java</h1>
-                        <p>October 2022 - Present</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Knu09/nanotech" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="22" width="22" viewBox="0 0 496 512">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                            </svg>
+                            <!--                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">-->
+                            <!--                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>-->
+                            <!--                            </svg>-->
+                        </a>
+                        <a href="https://Knu09.github.io/nanotech/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/>
+                            </svg>
+                        </a>
                     </div>
-                    <div>
+                </div>
+            </li>
+            <li class="project-inner-content">
+                <div class="projects-content project-picture-section">
+                    <a target="_blank" href="https://Knu09.github.io/quiz-website/" class="profile-wrapper">
+                        <img src="images/intelquiz.png" alt="INTELQUIZ WEB IMAGE">
+                    </a>
+                </div>
+                <div class="projects-content project-details-section">
+                    <div class="upper-header-content">
+                        <h2 class="project-upper-header">FEATURED PROJECT</h2>
+                    </div>
+                    <div class="main-header-content">
+                        <a target="_blank" href="https://knu09.github.io/quiz-website/">
+                            <h1 class="project-title">Programming Quiz</h1>
+                        </a>
+                    </div>
+                    <div class="details-content">
+                        <p class="project-description">This Website is created to provide an online quiz for the welcome
+                            smash event at the University of Negros Occidental - Recoletos who wants to learn and solve
+                            technology terms, programming-related questions, and simple machine problems.</p>
+                    </div>
+                    <div class="technologies-used">
                         <ul>
-                            <li class="list-item">
-                                Created a Graphical User Interface of 'F.L.A.M.E.S' game and programmed its logic.
-                            </li>
-                            <li class="list-item">
-                                Created a Graphical User Interface and implemented a functional converter from Infex to
-                                Postfix notation.
-                            </li>
-                            <li class="list-item">
-                                Studied the intricacies and complexities of <strong>Advanced Object-Oriented
-                                    Programming</strong>.
-                            </li>
-                            <li class="list-item">
-                                Engaged in comprehensive studies into the fundamental principles of <strong>Data
-                                    Structures and Algorithms</strong>, and acquired an understanding of their intricate
-                                concepts.
-                            </li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
                         </ul>
                     </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Knu09/quiz-website" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="22" width="22" viewBox="0 0 496 512">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                            </svg>
+                            <!--                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">-->
+                            <!--                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>-->
+                            <!--                            </svg>-->
+                        </a>
+                        <a href="https://Knu09.github.io/quiz-website/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section id="projects" class="style-container projects-style-container">
-            <h2 class="heading-number projects-num"> Recently Projects I've Built</h2>
-            <ul>
-                <li class="project-inner-content">
-                    <div class="projects-content project-picture-section">
-                        <a target="_blank" href="https://Knu09.github.io/nanotech/" class="profile-wrapper">
-                            <img src="images/Screenshot 2024-01-09 011740.png" alt="NANOTECH WEB IMAGE">
-                        </a>
-                    </div>
-                    <div class="projects-content project-details-section">
-                        <div class="upper-header-content">
-                            <h2 class="project-upper-header">FEATURED PROJECT</h2>
-                        </div>
-                        <div class="main-header-content">
-                            <a target="_blank" href="https://knu09.github.io/nanotech/">
-                                <h1 class="project-title">NANOTECH</h1>
-                            </a>
-                        </div>
-                        <div class="details-content">
-                            <p class="project-description">A partial website BootCamp that provides a gateway to a world of coding knowledge.
-                                NANOTECH provides a comprehensive BootCamp Website for aspiring students,
-                                programmers, and seasoned developers who can access different kinds of
-                                courses that consist live coding tutorial, video courses, and coding libraries.
-                            </p>
-                        </div>
-                        <div class="technologies-used">
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>Bootstrap</li>
-                            </ul>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com.Knu09.nanotech" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="22" width="22" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                                <!--                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">-->
-                                <!--                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>-->
-                                <!--                            </svg>-->
-                            </a>
-                            <a href="https://Knu09.github.io/nanotech/" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li class="project-inner-content">
-                    <div class="projects-content project-picture-section">
-                        <a target="_blank" href="https://Knu09.github.io/nanotech/" class="profile-wrapper">
-                            <img src="images/Screenshot 2024-01-09 011740.png" alt="NANOTECH WEB IMAGE">
-                        </a>
-                    </div>
-                    <div class="projects-content project-details-section">
-                        <div class="upper-header-content">
-                            <h2 class="project-upper-header">FEATURED PROJECT</h2>
-                        </div>
-                        <div class="main-header-content">
-                            <a target="_blank" href="https://knu09.github.io/nanotech/">
-                                <h1 class="project-title">Programming Quiz</h1>
-                            </a>
-                        </div>
-                        <div class="details-content">
-                            <p class="project-description">This Website is created to provide an online quiz for the welcome smash event at the University of Negros Occidental - Recoletos who wants to learn and solve technology terms, programming-related questions, and simple machine problems.</p>
-                        </div>
-                        <div class="technologies-used">
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                            </ul>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com.Knu09.nanotech" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="22" width="22" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                                <!--                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">-->
-                                <!--                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>-->
-                                <!--                            </svg>-->
-                            </a>
-                            <a href="https://Knu09.github.io/nanotech/" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                <path class="folder" d="M64 480H448c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H288c-10.1 0-19.6-4.7-25.6-12.8L243.2 57.6C231.1 41.5 212.1 32 192 32H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64z"/>
-            </svg>
-        </section>
-    </main>
-    <footer>
+            </li>
+        </ul>
 
-    </footer>
+        <div id="archive" class="archive-style-container">
+            <div class="archive-title">
+                <div class="vertical-line"></div>
+                <h1>Archived Projects</h1>
+                <div class="vertical-line"></div>
+            </div>
+            <ul class="archive-grid js-archive-grid">
+<!--                JAVASCRIPT DATABASE PROJECTS-->
+            </ul>
+        </div>
+    </section>
+</main>
+<footer>
+
+</footer>
 </body>
 
 </html>

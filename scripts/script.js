@@ -75,8 +75,6 @@ const navbarMenu = document.querySelector(".navbar-subpages");
 const blurMainBody = document.body;
 const navLink = document.querySelectorAll(".navbar-subpages li a")
 
-console.log(navLink)
-
 navbarToggler.addEventListener('click', () => {
     navbarMenu.classList.toggle('active');
     navbarToggler.classList.toggle('active');
@@ -123,20 +121,78 @@ window.addEventListener('scroll', () => {
 
     navBar.classList.toggle('sticky-nav', window.scrollY > 0);
 
+    console.log(window.scrollY)
+
     toggleCircleActive(aboutSection, aboutCircle);
     toggleCircleActive(experienceSection, experienceCircle);
     toggleCircleActive(projectsSection, projectsCircle);
     toggleCircleActive(contactSection, contactCircle);
 }
 );
-
 function toggleCircleActive(section, circle) {
-    const isInSection = (window.scrollY + window.innerHeight - 500) >= section.offsetTop &&
-        (window.scrollY + window.innerHeight - 500) < section.offsetTop + section.offsetHeight;
-    circle.classList.toggle('active', isInSection);
+    if (section && circle) {
+        const isInSection = (window.scrollY + window.innerHeight - 500) >= section.offsetTop &&
+            (window.scrollY + window.innerHeight - 500) < section.offsetTop + section.offsetHeight;
 
+        circle.classList.toggle('active', isInSection);
+    }
 }
 
 
 // PROJECTS
-let projectsHTML = '';
+let archivedProjectsHTML = '';
+
+archivedProjects.forEach((project, index) => {
+
+    let linkHTML = '';
+    let technologiesHTML = '';
+
+    project.links.forEach(link => {
+        linkHTML += `
+            <a href="${link.url}" target="_blank">
+                ${link.icon}
+            </a>
+        `
+    })
+
+    project.technologies.forEach((item, index) => {
+        technologiesHTML += `
+            <li>${item}</li>
+        `
+    })
+
+    archivedProjectsHTML += `
+        <li class="archive-folder">
+        <div class="folder-contents">
+            <div class="header-content">
+                <div class="folder-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 298" fill="none">
+                        <path class="folder" d="M0 10C0 4.47715 4.47715 0 10 0H109.619C112.459 0 115.165 1.20766 117.062 3.32158L141 30H0V10Z" fill="#0C1A3A"/>
+                    </svg>
+                </div>
+                <div class="project-links">
+                    ${linkHTML}
+                </div>
+                <div class="main-header-content">
+                    <a href="${project.websiteLink}" target="_blank">
+                        <h1 class="project-title">${project.title}</h1>
+                    </a>
+                </div>
+                <div class="details-content">
+                    <p class="project-description">${project.description}</p>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="technologies-used">
+                    <ul>
+                        ${technologiesHTML}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+    `;
+})
+
+document.querySelector('.js-archive-grid').innerHTML = archivedProjectsHTML;
+
