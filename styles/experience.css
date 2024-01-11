@@ -96,7 +96,7 @@
 
     .tab-titles {
         overflow-x: auto;
-        width: calc(100%, 100px);
+        /*width: calc(100%, 100px);*/
     }
     
     .active-line2 {

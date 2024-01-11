@@ -16,7 +16,7 @@
 
 .heading-number {
     font-size: var(--font-size-md);
-    margin-bottom: 2em;
+    margin-bottom: 30px;
 }
 
 #about .details-content p {

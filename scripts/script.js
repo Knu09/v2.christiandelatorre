@@ -19,46 +19,6 @@ btnTabs.forEach((tab, index) => {
     })
 });
 
-const experienceBtnTabs = document.querySelectorAll('.experience-tab-link');
-const experienceAllContents = document.querySelectorAll('#experience .tab-contents');
-const mediaQueryWidth = window.matchMedia("(max-width: 600px)");
-
-let activeLine = document.querySelector('.active-line2');
-let activeTabLink = document.querySelector(".experience-tab-link.active");
-
-function updateActiveLineStyles(clickedTab) {
-    if (!mediaQueryWidth.matches) {
-        activeLine.style.top = clickedTab.offsetTop + "px";
-        activeLine.style.height = clickedTab.offsetHeight + "px";
-        activeLine.style.width = "2px";
-        activeLine.style.left = "0px"; // Assuming you want to reset it to 0px
-    } else {
-        activeLine.style.width = clickedTab.offsetWidth + "px";
-        activeLine.style.left = clickedTab.offsetLeft + "px";
-        activeLine.style.height = "2px";
-        activeLine.style.top = "54px";
-    }
-}
-
-experienceBtnTabs.forEach((tab, index) => {
-    tab.addEventListener('click', (e) => {
-        const clickedTab = e.currentTarget;
-
-        experienceBtnTabs.forEach(tab => {
-            tab.classList.remove('active');
-        });
-        clickedTab.classList.add('active');
-        activeTabLink = clickedTab;
-
-        updateActiveLineStyles(clickedTab);
-
-        experienceAllContents.forEach(content => {
-            content.classList.remove('active');
-        });
-        experienceAllContents[index].classList.add('active');
-    });
-});
-
 const resizeObserver = new ResizeObserver(entries => {
     const windowWidth = entries[0].contentRect.width;
     if (windowWidth <= 600 && activeTabLink) {
@@ -196,3 +156,74 @@ archivedProjects.forEach((project, index) => {
 
 document.querySelector('.js-archive-grid').innerHTML = archivedProjectsHTML;
 
+// EXPERIENCE
+let experienceHTML = '';
+
+experience.forEach(item => {
+    let listHTML = '';
+
+    item.lists.forEach((list, index) => {
+        listHTML += `
+            <li class="list-item">${list}</li>
+        `
+    })
+
+    experienceHTML += `
+        <div class="tab-contents js-tab-contents ${item.isActive}">
+            <div class="content-header">
+                <h1>${item.title}</h1>
+                <p>${item.date}</p>
+            </div>
+            <div>
+                <ul>
+                    ${listHTML}
+                </ul>
+            </div>
+        </div>
+    `
+})
+
+document.querySelector('.js-tabs-container').innerHTML = experienceHTML;
+
+
+const experienceBtnTabs = document.querySelectorAll('.experience-tab-link');
+const experienceAllContents = document.querySelectorAll('.js-tab-contents');
+const mediaQueryWidth = window.matchMedia("(max-width: 600px)");
+
+let activeLine = document.querySelector('.active-line2');
+let activeTabLink = document.querySelector(".experience-tab-link.active");
+
+function updateActiveLineStyles(clickedTab) {
+    if (!mediaQueryWidth.matches) {
+        activeLine.style.top = clickedTab.offsetTop + "px";
+        activeLine.style.height = clickedTab.offsetHeight + "px";
+        activeLine.style.width = "2px";
+        activeLine.style.left = "0px"; // Assuming you want to reset it to 0px
+    } else {
+        activeLine.style.width = clickedTab.offsetWidth + "px";
+        activeLine.style.left = clickedTab.offsetLeft + "px";
+        activeLine.style.height = "2px";
+        activeLine.style.top = "54px";
+    }
+}
+
+experienceBtnTabs.forEach((tab, index) => {
+    tab.addEventListener('click', (e) => {
+        const clickedTab = e.currentTarget;
+
+        experienceBtnTabs.forEach(tab => {
+            tab.classList.remove('active');
+        });
+        clickedTab.classList.add('active');
+        activeTabLink = clickedTab;
+
+        updateActiveLineStyles(clickedTab);
+
+        experienceAllContents.forEach(content => {
+            content.classList.remove('active');
+        });
+
+        experienceAllContents[index].classList.add('active');
+
+    });
+});

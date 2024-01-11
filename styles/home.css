@@ -34,7 +34,7 @@
 
 .details-content p {
     color: var(--clr-secondary-semi-white60);
-    font-family: Open Sans, sans-serif;
+    font-family: Open Sans, serif;
     font-size: clamp(var(--font-size-5xs), 4vw,var(--font-size-4xs)) ;
     font-style: normal;
     font-weight: 400;

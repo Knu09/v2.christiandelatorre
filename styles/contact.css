@@ -21,7 +21,9 @@
 
 .form-content {
     padding: 3em 20px;
+    max-width: 40em;
     width: 100%;
+    margin: 0 auto;
 }
 
 .form-content .form-group {
