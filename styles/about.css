@@ -126,14 +126,13 @@
 }
 
 .tab-contents .columns ul {
-    padding: 0;
     margin-bottom: 0;
+    padding-left: 16px;
 }
 
 .tab-contents .columns ul li {
     margin-bottom: 1rem;
     text-decoration: none;
-    list-style: none;
 }
 
 /* .tab-contents .columns ul .list-item:before {
@@ -143,15 +142,10 @@
     color: var(--clr-primary-white);
 } */
 
-.tab-contents .columns ul .list-title {
-    color: var(--clr-secondary-semi-white60);
-    font-weight: 600;
-}
-
 .tab-contents .columns ul .list-item {
-    color: var(--clr-secondary-semi-white40);
+    color: var(--clr-secondary-semi-white60);
     margin-bottom: 10px;
-
+    font-size: var(--font-size-4xs);
 }
 
 #education {
@@ -160,8 +154,12 @@
 
 }
 
-#education .rows ul{
-    padding: 0;
+.tab-contents .about-content .list-title {
+    margin-bottom: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-size: var(--font-size-3xs);
+    color: var(--clr-primary-semi-white);
+    font-weight: 600;
 }
 
 .about-right-content .profile-picture {

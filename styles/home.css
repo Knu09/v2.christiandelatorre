@@ -33,11 +33,11 @@
 }
 
 .details-content p {
-    color: var(--clr-secondary-semi-white70);
+    color: var(--clr-secondary-semi-white60);
     font-family: Open Sans, sans-serif;
     font-size: clamp(var(--font-size-5xs), 4vw,var(--font-size-4xs)) ;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 24px;
     margin-top: 1rem;
     max-width: 520px;

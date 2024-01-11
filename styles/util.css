@@ -5,10 +5,10 @@
     --clr-primary-navy-blue: #131D35;
     --clr-primary-dark-navy-blue: #0C1A3A;
     --clr-primary-cyan: #00FFF8;
-    --clr-primary-white: #FFFFFFCC;
-    --clr-primary-semi-white: rgba(255,255,255,.4);
-    --clr-secondary-semi-white70: #ffffff70;
-    --clr-secondary-semi-white60: #FFFFFF99;
+    --clr-primary-white: rgba(255, 255, 255, 0.8);
+    --clr-primary-semi-white: rgba(255, 255, 255, 0.7);
+    --clr-secondary-semi-white60: rgba(255, 255, 255, 0.6);
+    --clr-secondary-semi-white50: rgba(255, 255, 255, 0.5);
     --clr-secondary-semi-white40: #FFFFFF66;
     --clr-secondary-blue: #0292e0;
 }

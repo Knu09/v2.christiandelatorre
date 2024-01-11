@@ -4,6 +4,10 @@
     content: "03.";
 }
 
+#projects ul{
+    padding-left: 0;
+}
+
 .project-inner-content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -30,6 +34,7 @@
 .project-details-section {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: end;
     z-index: 1;
 
@@ -39,6 +44,13 @@
     box-shadow: 8px 8px 20px -10px rgba(0,0,0,.3);
     border-radius: 12px;
 }
+
+.project-details-section .header {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
 
 .project-inner-content:nth-child(odd) .project-details-section {
     grid-area: 1 / -1 / -1 / 6;
@@ -123,7 +135,7 @@
 
 .technologies-used ul li {
     list-style: none;
-    color: rgba(255,255,255,.25);
+    color: rgba(255,255,255,.4);
 
 }
 
@@ -157,7 +169,7 @@
 }
 
 .archive-title h1 {
-    font-size: var(--font-size-md);
+    font-size: clamp(var(--font-size-xs), 4vw, var(--font-size-md)) ;
     margin: 0 24px;
     white-space: nowrap;
 }
@@ -295,25 +307,49 @@
 
 @media (max-width: 768px) {
 
-    .project-inner-content:nth-child(odd) .project-picture-section {
-        grid-area: 1 / 1 / -1 / -1;
+    .project-inner-content .project-picture-section {
         z-index: 1;
         opacity: .25;
     }
 
-    .project-inner-content:nth-child(odd) .project-details-section {
-        grid-area: 1 / -1 / -1 / 1;
+    .project-inner-content .project-details-section {
         z-index: 100;
         margin-top: 0;
         background: rgba(12, 26, 58, .5);
     }
 
+    .project-picture-section a {
+        width: auto;
+        height: 100%;
+    }
+
+    .project-picture-section a img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .project-inner-content:nth-child(odd) .project-picture-section {
+        grid-area: 1 / 1 / -1 / -1;
+
+    }
+
+    .project-inner-content:nth-child(odd) .project-details-section {
+        grid-area: 1 / -1 / -1 / 1;
+        align-items: start;
+        padding: 40px 30px;
+    }
+
+    .project-inner-content:nth-child(odd) .project-details-section .header{
+        text-align: left;
+        align-items: start;
+    }
+
     .project-inner-content:nth-child(even) .project-picture-section {
-        grid-area: 1 / -1 / -1 / 8;
+        grid-area: 1 / 1 / -1 / -1;
     }
 
     .project-inner-content:nth-child(even) .project-details-section {
-        grid-area: 1 / 9 / -1 / 1;
-        padding-right: 4em;
+        grid-area: 1 / -1 / -1 / 1;
+        padding: 40px 30px;
     }
 }
