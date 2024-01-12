@@ -1,6 +1,7 @@
 
 /* COLOR */
 :root {
+    --clr-secondary-ultra-dark-blue: #0d1323;
     --clr-primary-dark-blue: #0F172A;
     --clr-primary-navy-blue: #131D35;
     --clr-primary-dark-navy-blue: #0C1A3A;
@@ -32,6 +33,9 @@
 
 :root {
     counter-reset: headings;
+
+    /*TRANSITION*/
+    --transition: all .3s ease-in-out;
 }
 
 /*

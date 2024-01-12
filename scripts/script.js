@@ -227,3 +227,31 @@ experienceBtnTabs.forEach((tab, index) => {
 
     });
 });
+
+
+// SPLASH ANIMATION INTRO
+const introSection = document.querySelector('.intro');
+const logoSplash = document.querySelector('.logo-splash');
+const logoText = document.querySelector('.logo-text');
+const logoStroke = document.querySelector('.logo-stroke');
+
+window.addEventListener('DOMContentLoaded', () => {
+    logoText.classList.add('active');
+
+    setTimeout(() => {
+        logoStroke.classList.add('active');
+    }, 600)
+
+    setTimeout(() => {
+        logoSplash.classList.add('fade-out')
+        setTimeout(() => {
+            introSection.classList.add('fade-out');
+            document.documentElement.style.overflow = "scroll";
+            setTimeout(() => {
+                logoSplash.style.display = "none";
+                introSection.style.display = "none";
+            }, 1000)
+        }, 600)
+
+    }, 3300)
+})
