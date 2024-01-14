@@ -43,7 +43,8 @@
     padding: 10px 0;
     border-radius: 0;
     border-bottom: 1px solid var(--clr-secondary-semi-white60);
-    font-size: var(--font-size-3xs);
+    font-size: var(--font-size-4xs);
+    transition: var(--transition);
 }
 
 .form-group input:focus
@@ -59,4 +60,27 @@
     color: var(--clr-primary-cyan);
 }
 
+.form-group input.error,
+textarea.error {
+    border-bottom: 1px solid var(--clr-secondary-red);
+}
+
+.error-message {
+    opacity: 0;
+    font-size: var(--font-size-4xs);
+    color: #d93025;
+    text-align: left;
+    margin-top: 5px;
+    transition: var(--transition);
+}
+
+.form-group.error .error-message {
+    opacity: 1;
+}
+
+.submit-output {
+    margin-top: 5.5em;
+    color: #4bff4b;
+    font-size: var(--font-size-3xs);
+}
 

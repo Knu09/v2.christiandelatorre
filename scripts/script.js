@@ -81,8 +81,6 @@ window.addEventListener('scroll', () => {
 
     navBar.classList.toggle('sticky-nav', window.scrollY > 0);
 
-    console.log(window.scrollY)
-
     toggleCircleActive(aboutSection, aboutCircle);
     toggleCircleActive(experienceSection, experienceCircle);
     toggleCircleActive(projectsSection, projectsCircle);
@@ -304,6 +302,8 @@ function checkInputs () {
             checkEmail();
         }
 
+        console.log(items[1])
+
         items[1].addEventListener("keyup", () => {
             checkEmail();
         })
@@ -346,3 +346,4 @@ form.addEventListener('submit', (e) => {
         return false;
     }
 })
+

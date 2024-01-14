@@ -118,14 +118,6 @@ html {
     overflow: hidden;
 }
 
-html.fade-out {
-    overflow: scroll
-}
-
-html.outro {
-    overflow: scroll;
-}
-
 .intro .logo-splash {
     position: absolute;
     z-index: 201;

@@ -155,11 +155,14 @@
                 <a href="https://github.com/Knu09" target="_blank" class="link"><i class="fa-brands fa-github"></i></a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/christ-dela-torre-ba89882a1/" target="_blank" class="link"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/christian-de-la-torre-ba89882a1/" target="_blank" class="link"><i class="fa-brands fa-linkedin-in"></i></a>
             </li>
             <li>
                 <a href="https://www.instagram.com/christ_0001/" target="_blank" class="link"><i class="fa-brands fa-instagram"></i></a>
             </li>
+            <li>
+                <a href="mailto:programmingchristdev@gmail.com" class="link"><i class="fa-regular fa-envelope"></i></a>
+            </li> 
             <li class="sidebar-vertical-line"></li>
         </ul>
     </div>
@@ -235,11 +238,13 @@
                             <li class="list-item">HTML/CSS</li>
                             <li class="list-item">SQL</li>
                             <li class="list-item">Java</li>
+                            <li class="list-item">Python</li>
                         </ul>
                     </div>
                     <div class="columns about-content frameworks">
                         <h3 class="list-title">FRAMEWORKS</h3>
                         <ul>
+                            <li class="list-item">Swing GUI</li>
                             <li class="list-item">Boostrap</li>
                             <li class="list-item">jQuery</li>
                         </ul>
@@ -449,24 +454,31 @@
         </div>
         <div class="details-content">
             <p>While I'm not currently looking for a job, I'll appreciate your friendly greetings. If you have any
-                interesting ideas or to discuss, feel free to contact me below and I will get back you as soon as
+                interesting ideas or to discuss, feel free to contact me below and I will get back to you as soon as
                 possible.</p>
         </div>
         <div class="form-content">
-            <form>
+            <form novalidate>
                 <div class="mb-4 form-group">
                     <label for="name" class="form-label">Your Name</label>
-                    <input placeholder="Enter your Name" type="text" class="" id="name">
+                    <input autocomplete="off" placeholder="Enter your Name" type="text" class="item" id="name">
+                    <div class="error-message">Please fill your name.</div>
                 </div>
                 <div class="mb-4 form-group">
                     <label for="email" class="form-label">Your Email</label>
-                    <input placeholder="Enter your Email Address" type="email" class="" id="email">
+                    <input autocomplete="off" placeholder="Enter your Email Address" type="email" class="item" id="email">
+                    <div class="error-message">Please fill a properly formatted email address.</div>
                 </div>
                 <div class="mb-4 form-group">
                     <label for="message" class="form-label">Your Message</label>
-                    <textarea rows="2" placeholder="Want anything to say?" id="message" class=""></textarea>
+                    <textarea autocomplete="off" rows="2" placeholder="Want anything to say?" id="message" class="item"></textarea>
+                    <div class="error-message">Please provide a message.</div>
                 </div>
-                <button class="stroke-button button-stroke submit-btn">
+<!--                <div class="mb4 form-group">-->
+<!--                    <label for="awesome">Your website is totally awesome!</label>-->
+<!--                    <input type="checkbox" id="awesome">-->
+<!--                </div>-->
+                <button type="submit" class="stroke-button button-stroke submit-btn">
                     <svg>
                         <rect x="5" y="3" rx="25" ry="25"></rect>
                         <defs>
@@ -482,7 +494,12 @@
                         </div>
                     </svg>
                 </button>
+                <div class="submit-output">
+
+                </div>
             </form>
+
+
         </div>
     </section>
 </main>
@@ -494,7 +511,7 @@
                 <a href="https://github.com/Knu09" target="_blank" class="link"><i class="fa-brands fa-github"></i></a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/christ-dela-torre-ba89882a1/" target="_blank" class="link"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/christian-de-la-torre-ba89882a1/" target="_blank" class="link"><i class="fa-brands fa-linkedin-in"></i></a>
             </li>
             <li>
                 <a href="https://www.instagram.com/christ_0001/" target="_blank" class="link"><i class="fa-brands fa-instagram"></i></a>
@@ -508,6 +525,9 @@
         </div>
     </div>
 </footer>
-</body>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
 </html>
