@@ -30,7 +30,7 @@ const archivedProjects = [
         title: "Infix to Postfix",
         websiteLink: 'https://github.com/Knu09/infix-to-postfix-converter',
         description: "The Graphical User Interface (GUI) application that simplifies complex mathematical expressions by converting them from infix notation to postfix notation.",
-        technologies: ["Java", "Java Swing"]
+        technologies: ["Java", "Swing GUI"]
     },
     {
         links: [ {
@@ -71,7 +71,7 @@ const archivedProjects = [
         title: "Memorial Plan",
         websiteLink: 'https://github.com/Knu09/memorial-plan',
         description: "A Graphical User Interface (GUI) is designed to honor the loved ones interactive way, this innovative memorial tool guide you through each step of planning a funeral from helping them to structure the funeral.",
-        technologies: ["Java", "Java Swing"]
+        technologies: ["Java", "Swing GUI"]
     },
     {
 

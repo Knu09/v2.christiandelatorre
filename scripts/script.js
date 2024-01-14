@@ -246,7 +246,7 @@ window.addEventListener('DOMContentLoaded', () => {
         logoSplash.classList.add('fade-out')
         setTimeout(() => {
             introSection.classList.add('fade-out');
-            document.documentElement.style.overflow = "scroll";
+            document.documentElement.style.overflowY = "scroll";
             setTimeout(() => {
                 logoSplash.style.display = "none";
                 introSection.style.display = "none";
@@ -254,4 +254,95 @@ window.addEventListener('DOMContentLoaded', () => {
         }, 600)
 
     }, 3300)
+})
+
+
+// FORM's SCRIPT
+
+const form = document.querySelector('form')
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+
+function sendEmail() {
+    const bodyMessage = `
+        Name: ${name.value}<br>
+        Email: ${email.value}<br>
+        Message: ${message.value}
+    `
+
+    Email.send({
+        SecureToken: "edfa0544-ea6a-439e-91cc-29958ab91572",
+
+        To : 'programmingchristdev@gmail.com',
+        From : "programmingchristdev@gmail.com",
+        Subject : "New Contact Form Enquiry",
+        Body : bodyMessage
+    }).then(
+        message => {
+            if (message === "OK") {
+                Swal.fire({
+                    title: "Thank You!",
+                    text: "Message sent successfully!",
+                    icon: "success"
+                });
+            }
+        }
+    );
+}
+
+function checkInputs () {
+    const items = document.querySelectorAll('.item')
+
+    items.forEach((item, index) => {
+        if (item.value === "") {
+            item.classList.add('error');
+            item.parentElement.classList.add('error')
+        }
+
+        if (items[1].value !== "") {
+            checkEmail();
+        }
+
+        items[1].addEventListener("keyup", () => {
+            checkEmail();
+        })
+
+        item.addEventListener("keyup", () => {
+            if (item.value !== "") {
+                item.classList.remove('error');
+                item.parentElement.classList.remove('error')
+            } else {
+                item.classList.add('error');
+                item.parentElement.classList.add('error')
+            }
+        })
+    })
+}
+
+function checkEmail() {
+    const regexEmail = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+
+    if (!email.value.match(regexEmail)) {
+        email.classList.add('error');
+        email.parentElement.classList.add('error');
+    } else {
+        email.classList.remove('error');
+        email.parentElement.classList.remove('error');
+    }
+
+
+}
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    checkInputs();
+
+    if (!name.classList.contains('error') && !email.classList.contains('error')
+    && !message.classList.contains('error')) {
+        sendEmail();
+
+        form.reset();
+        return false;
+    }
 })
