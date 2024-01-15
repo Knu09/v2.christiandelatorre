@@ -49,7 +49,7 @@
     <nav class="navbar navbar-expand fixed-top">
         <div class="container-fluid navbar-contents">
             <div class="navbar-header d-flex flex-row justify-content-center">
-                <a class="navbar-brand" href="index.html" target="_self">
+                <a class="navbar-brand hidden hidden-nav" href="index.html" target="_self" id="home">
                     <svg class="logo-container" xmlns="http://www.w3.org/2000/svg" width="40" height="60" viewBox="0 0 82 98" fill="none">
                         <path class="" d="M46.9182 40.9319C46.9182 38.7719 45.2382 37.0919 43.0782 37.0919H39.2382C37.0782 37.0919 35.3982 38.8199 35.3982 40.9319V57.2039C35.3982 59.3159 37.1262 61.0439 39.2382 61.0439H43.0782C45.1902 61.0439 46.9182 59.3159 46.9182 57.2039V54.5639H51.7182V57.2039C51.7182 61.9559 47.8782 65.8919 43.0782 65.8919H39.2382C34.4862 65.8919 30.5982 61.9559 30.5982 57.2039V40.9319C30.5982 36.1319 34.4862 32.2919 39.2382 32.2919H43.0782C47.8782 32.2919 51.7182 36.1319 51.7182 40.9319V43.5719H46.9182V40.9319Z" fill="#00FFF8"/>
                         <path class="logo-animation" d="M40.6528 93.9969L3.5 73.3733L3.5 23.6428L40.6528 3.9608L77.8055 23.6428V48.4848V73.3733L40.6528 93.9969Z" stroke="url(#paint0_linear_3_53)" stroke-width="6"/>
@@ -64,16 +64,16 @@
             </div>
             <div class="navbar-subpages-wrapper container-fuid">
                 <ul class="navbar-nav navbar-subpages">
-                    <li class="nav-item"><a class="nav-link" href="#about"><span class="nav-number">01.</span>
+                    <li class="nav-item hidden hidden-nav" style="--order: 1"><a class="nav-link" href="#about"><span class="nav-number">01.</span>
                         About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience"><span class="nav-number">02.</span>
+                    <li class="nav-item hidden hidden-nav" style="--order: 2"><a class="nav-link" href="#experience"><span class="nav-number">02.</span>
                         Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects"><span class="nav-number">03.</span>
+                    <li class="nav-item hidden hidden-nav" style="--order: 3"><a class="nav-link" href="#projects"><span class="nav-number">03.</span>
                         Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact"><span class="nav-number">04.</span>
+                    <li class="nav-item hidden hidden-nav" style="--order: 4"><a class="nav-link" href="#contact"><span class="nav-number">04.</span>
                         Contact</a></li>
                     <!-- <li class="d-flex align-items-center"><div class="vertical-line"></div></li> -->
-                    <li class="nav-item stroke-container">
+                    <li class="nav-item stroke-container hidden hidden-nav" style="--order: 5">
                         <a href="#" class="stroke-button button-stroke">
                             <svg>
                                 <rect x="3" y="3" rx="25" ry="25"></rect>
@@ -95,7 +95,7 @@
                         </a>
                     </li>
                 </ul>
-                <div class="navbar-toggler">
+                <div class="navbar-toggler hidden hidden-nav">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -117,8 +117,8 @@
         </defs>
     </svg>
 </div>
-<aside>
-    <div class="sidebar-container sidebar-rightStyle-container">
+<aside class="">
+    <div class="sidebar-container sidebar-rightStyle-container hidden hidden-sidebar">
         <ul class="circle-bar-wrapper">
             <li>
                 <a href="#about" class="sidebar-about">
@@ -147,8 +147,8 @@
         </ul>
     </div>
 </aside>
-<aside>
-    <div class="sidebar-container sidebar-leftStyle-container">
+<aside class="">
+    <div class="sidebar-container sidebar-leftStyle-container hidden hidden-sidebar">
         <ul class="circle-bar-wrapper">
             <li class="sidebar-vertical-line"></li>
             <li>
@@ -169,20 +169,20 @@
 </aside>
 <main>
     <section class="hero-style-container">
-        <div class="upper-header-content">
+        <div class="upper-header-content hidden hidden-hero" style="--order: 1">
             <h2>Hi, MY NAME IS</h2>
         </div>
-        <div class="main-header-content">
+        <div class="main-header-content hidden hidden-hero" style="--order: 2">
             <h1 class="header-name">CHRISTIAN DE LA TORRE</h1>
             <h1>I am a dedicated <span>Developer</span></h1>
         </div>
-        <div class="details-content">
+        <div class="details-content hidden hidden-hero" style="--order: 3">
             <p>I code and develop innovative things. I am a dedicated student
                 at the <strong>University of Negros Occidental - Recoletos</strong>, currently
                 pursuing a degree in <strong>Computer Science</strong>.
             </p>
         </div>
-        <div class="button-content">
+        <div class="button-content hidden hidden-hero" style="--order: 4">
             <a href="#projects" class="stroke-button button-stroke project-btn">
                 <svg>
                     <rect x="5" y="3" rx="25" ry="25"></rect>
@@ -202,7 +202,7 @@
             </a>
         </div>
     </section>
-    <section id="about" class="style-container about-style-container">
+    <section id="about" class="style-container about-style-container hidden hidden-section">
         <h2 class="heading-number"> About Me</h2>
         <div class="about-inner-section">
             <div class="about-content about-left-content">
@@ -290,7 +290,7 @@
             </div>
         </div>
     </section>
-    <section id="experience" class="style-container experience-style-container">
+    <section id="experience" class="style-container experience-style-container hidden hidden-section">
         <h2 class="heading-number experience-num"> My Industry Experience</h2>
         <div class="details-content">
             <p>In the rapid pace of evolving in the programming industry,
@@ -315,10 +315,7 @@
                     Python
                 </button>
                 <button class="tab-link experience-tab-link">
-                    JavaScript
-                </button>
-                <button class="tab-link experience-tab-link">
-                    HTML/CSS
+                    Web Development
                 </button>
                 <button class="tab-link experience-tab-link">
                     SQL
@@ -331,9 +328,9 @@
         </div>
     </section>
     <section id="projects" class="style-container projects-style-container projects">
-        <h2 class="heading-number projects-num"> Recently Projects I've Built</h2>
+        <h2 class="heading-number projects-num hidden hidden-section"> Recently Projects I've Built</h2>
         <ul>
-            <li class="project-inner-content">
+            <li class="project-inner-content hidden hidden-section">
                 <div class="projects-content project-picture-section">
                     <a target="_blank" href="https://Knu09.github.io/nanotech/" class="profile-wrapper">
                         <img src="images/nanotech_img.png" alt="NANOTECH WEB IMAGE">
@@ -386,7 +383,7 @@
                     </div>
                 </div>
             </li>
-            <li class="project-inner-content">
+            <li class="project-inner-content hidden hidden-section">
                 <div class="projects-content project-picture-section">
                     <a target="_blank" href="https://Knu09.github.io/quiz-website/" class="profile-wrapper">
                         <img src="images/intelquiz.png" alt="INTELQUIZ WEB IMAGE">
@@ -445,7 +442,7 @@
             </ul>
         </div>
     </section>
-    <section id="contact" class="style-container contact-style-container">
+    <section id="contact" class="style-container contact-style-container hidden hidden-section">
         <div class="upper-header-content">
             <h2 class="heading-number contact-num"> Contact</h2>
         </div>
@@ -504,7 +501,7 @@
     </section>
 </main>
 <footer>
-    <div class="footer-style-container">
+    <div class="footer-style-container hidden hidden-section">
 
         <ul class="social-media-content">
             <li>
@@ -515,6 +512,9 @@
             </li>
             <li>
                 <a href="https://www.instagram.com/christ_0001/" target="_blank" class="link"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="mailto:programmingchristdev@gmail.com" class="link"><i class="fa-regular fa-envelope"></i></a>
             </li>
         </ul>
         <div>

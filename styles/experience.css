@@ -87,6 +87,7 @@
 
     #experience .tab-titles {
         flex-direction: row;
+        white-space: nowrap;
     }
     
     #experience .tab-titles .experience-tab-link {

@@ -120,7 +120,7 @@ archivedProjects.forEach((project, index) => {
     })
 
     archivedProjectsHTML += `
-        <li class="archive-folder">
+    <li class="archive-folder hidden hidden-archives">
         <div class="folder-contents">
             <div class="header-content">
                 <div class="folder-wrapper">
@@ -232,9 +232,13 @@ const introSection = document.querySelector('.intro');
 const logoSplash = document.querySelector('.logo-splash');
 const logoText = document.querySelector('.logo-text');
 const logoStroke = document.querySelector('.logo-stroke');
+const main = document.querySelector('main')
+const hiddenNav = document.querySelectorAll('.hidden-nav')
 
 window.addEventListener('DOMContentLoaded', () => {
     logoText.classList.add('active');
+    document.documentElement.classList.add('active')
+    // main.style.display = "block";
 
     setTimeout(() => {
         logoStroke.classList.add('active');
@@ -244,7 +248,10 @@ window.addEventListener('DOMContentLoaded', () => {
         logoSplash.classList.add('fade-out')
         setTimeout(() => {
             introSection.classList.add('fade-out');
-            document.documentElement.style.overflowY = "scroll";
+            document.documentElement.classList.remove('active');
+            hiddenNav.forEach(nav => {
+                nav.classList.add('show')
+            })
             setTimeout(() => {
                 logoSplash.style.display = "none";
                 introSection.style.display = "none";
@@ -347,3 +354,52 @@ form.addEventListener('submit', (e) => {
     }
 })
 
+// FADE SCROLL ANIMATION
+
+const autoOpenLink = document.getElementById('home');
+// window's view reset to the top when restarting the page
+window.addEventListener('load', () => {
+    window.scrollTo(0, 0);
+})
+
+const observer = new IntersectionObserver((e) => {
+    e.forEach((entry) => {
+        console.log(entry)
+        if(entry.isIntersecting) {
+            setTimeout(() => {
+                // if(entry.target.classList.contains('hidden-nav')) {
+                //     entry.target.classList.add('show')
+                // }
+                setTimeout(() => {
+                    if(entry.target.classList.contains('hidden-hero')) {
+                        entry.target.classList.add('show')
+                    }
+
+                    setTimeout(() => {
+                        if(entry.target.classList.contains('hidden-sidebar')){
+                            entry.target.classList.add('show')
+                        }
+                    }, 1500)
+                }, 1200)
+            }, 4300)
+
+            const hiddenArchives = document.querySelectorAll('.hidden-archives')
+
+
+            if(entry.target.classList.contains('hidden-section')) {
+                entry.target.classList.add('show')
+            } else if (entry.target.classList.contains('hidden-archives')) {
+                hiddenArchives.forEach((archive, index) => {{
+                    setTimeout(() => {
+                        if(entry.isIntersecting) {
+                            archive.classList.add('show')
+                        }
+                    }, (index + 1) * 200)
+                }})
+            }
+        }
+    })
+})
+
+const hiddenElements = document.querySelectorAll('.hidden')
+hiddenElements.forEach((el) => observer.observe(el))

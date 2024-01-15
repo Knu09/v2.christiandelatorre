@@ -1,5 +1,6 @@
 const archivedProjects = [
     {
+        styleOrder: '1',
         links: [ {
             url: "https://clearpath09.wixsite.com/clearpath",
             icon: `
@@ -17,6 +18,7 @@ const archivedProjects = [
         technologies: ["Wix", "Figma"]
     },
     {
+        styleOrder: '2',
         links: [ {
             url: "https://github.com/Knu09/infix-to-postfix-converter",
             icon: `
@@ -33,6 +35,7 @@ const archivedProjects = [
         technologies: ["Java", "Swing GUI"]
     },
     {
+        styleOrder: '3',
         links: [ {
             url: "https://github.com/Knu09/Tic-Tac-Toe",
             icon: `
@@ -58,6 +61,7 @@ const archivedProjects = [
         technologies: ["HTML", "CSS", "JavaScript"]
     },
     {
+        styleOrder: '4',
         links: [ {
             url: "https://github.com/Knu09/memorial-plan",
             icon: `
@@ -75,6 +79,7 @@ const archivedProjects = [
     },
     {
 
+        styleOrder: '5',
         links: [ {
             url: "https://github.com/Knu09/calculator",
             icon: `
@@ -100,6 +105,7 @@ const archivedProjects = [
         technologies: ["HTML", "CSS", "JavaScript"]
     },
     {
+        styleOrder: '6',
         links: [ {
             url: "https://github.com/Knu09/stopwatch",
             icon: `

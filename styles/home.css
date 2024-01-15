@@ -49,3 +49,33 @@
     width: 200px;
     height: 60px;
 }
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(3px);
+    transition: var(--transition);
+    transition-delay: calc(var(--order) * 250ms);
+}
+
+.hidden-nav {
+    /*transform: translateY(-15px);*/
+}
+
+.hidden-archives {
+    transform: translateY(20px);
+}
+
+.hidden-sidebar {
+    transform: translateY(0);
+}
+
+.hidden-section {
+    transition-delay: 300ms;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
