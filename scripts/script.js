@@ -233,11 +233,14 @@ const logoSplash = document.querySelector('.logo-splash');
 const logoText = document.querySelector('.logo-text');
 const logoStroke = document.querySelector('.logo-stroke');
 const main = document.querySelector('main')
+const html = document.querySelector('html')
 const hiddenNav = document.querySelectorAll('.hidden-nav')
+const hiddenMenu = document.querySelector('.hidden-menu')
 
 window.addEventListener('DOMContentLoaded', () => {
     logoText.classList.add('active');
-    document.documentElement.classList.add('active')
+
+    html.classList.add('active');
     // main.style.display = "block";
 
     setTimeout(() => {
@@ -248,13 +251,16 @@ window.addEventListener('DOMContentLoaded', () => {
         logoSplash.classList.add('fade-out')
         setTimeout(() => {
             introSection.classList.add('fade-out');
-            document.documentElement.classList.remove('active');
+
             hiddenNav.forEach(nav => {
                 nav.classList.add('show')
             })
             setTimeout(() => {
+
+                hiddenMenu.classList.add('show')
                 logoSplash.style.display = "none";
                 introSection.style.display = "none";
+                html.classList.remove('active');
             }, 1000)
         }, 600)
 
@@ -367,14 +373,10 @@ const observer = new IntersectionObserver((e) => {
         console.log(entry)
         if(entry.isIntersecting) {
             setTimeout(() => {
-                // if(entry.target.classList.contains('hidden-nav')) {
-                //     entry.target.classList.add('show')
-                // }
                 setTimeout(() => {
                     if(entry.target.classList.contains('hidden-hero')) {
                         entry.target.classList.add('show')
                     }
-
                     setTimeout(() => {
                         if(entry.target.classList.contains('hidden-sidebar')){
                             entry.target.classList.add('show')
