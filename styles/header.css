@@ -138,7 +138,7 @@
     border: 1px solid var(--clr-secondary-semi-white40);
 
     transition: .3s;
-    
+
 }
 
 .circle-bar-wrapper li a .circle.active {
@@ -152,9 +152,9 @@
     top: 50%;
     transform: translate(-50%, -50%);
     font-family: Open Sans, sans serif;
-    font-size: var(--font-size-4xs);
+    font-size: var(--font-size-5xs);
     text-align: right;
-    text-transform: uppercase;
+    text-transform: capitalize;
     transition: .3s;
     opacity: 0;
 }
