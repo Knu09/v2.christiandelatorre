@@ -239,7 +239,6 @@ const hiddenMenu = document.querySelector('.hidden-menu')
 
 window.addEventListener('DOMContentLoaded', () => {
     logoText.classList.add('active');
-
     html.classList.add('active');
     // main.style.display = "block";
 
@@ -256,11 +255,12 @@ window.addEventListener('DOMContentLoaded', () => {
                 nav.classList.add('show')
             })
             setTimeout(() => {
-
                 hiddenMenu.classList.add('show')
                 logoSplash.style.display = "none";
                 introSection.style.display = "none";
-                html.classList.remove('active');
+                setTimeout(() => {
+                    html.classList.remove('active');
+                }, 2200)
             }, 1000)
         }, 600)
 
@@ -343,8 +343,6 @@ function checkEmail() {
         email.classList.remove('error');
         email.parentElement.classList.remove('error');
     }
-
-
 }
 
 form.addEventListener('submit', (e) => {
@@ -363,10 +361,14 @@ form.addEventListener('submit', (e) => {
 // FADE SCROLL ANIMATION
 
 const autoOpenLink = document.getElementById('home');
+
 // window's view reset to the top when restarting the page
 window.addEventListener('load', () => {
     window.scrollTo(0, 0);
 })
+
+const hiddenArchives = document.querySelectorAll('.hidden-archives')
+const hiddenSection = document.querySelectorAll('.hidden-section')
 
 const observer = new IntersectionObserver((e) => {
     e.forEach((entry) => {
@@ -384,8 +386,6 @@ const observer = new IntersectionObserver((e) => {
                     }, 1500)
                 }, 1200)
             }, 4300)
-
-            const hiddenArchives = document.querySelectorAll('.hidden-archives')
 
 
             if(entry.target.classList.contains('hidden-section')) {
