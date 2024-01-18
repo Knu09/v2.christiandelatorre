@@ -30,7 +30,6 @@
     display: none;
     flex-direction: column;
     gap: 0;
-
 }
 
 #experience .tab-contents.active {

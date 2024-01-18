@@ -82,23 +82,15 @@
 
 
 #education .columns{
-    animation: moveup .3s ease-in-out;
+    animation: moveup calc(var(--order) * 200ms) ease-in-out;
 }
 
 .tab-contents {
-    animation: moveup .3s ease-in-out;
+    animation: moveup var(--transition);
 }
 
-.tab-contents .columns:nth-child(1) {
-    animation: moving 800ms ease;
-}
-
-.tab-contents .columns:nth-child(2) {
-    animation: moving 600ms ease;
-}
-
-.tab-contents .columns:nth-child(3) {
-    animation: moving 400ms ease;
+.tab-contents .columns {
+    animation: moveup calc(var(--order) * 200ms) ease-in-out;
 }
 
 @keyframes moveup {

@@ -36,7 +36,7 @@
     counter-reset: headings;
 
     /*TRANSITION*/
-    --transition: all .3s ease-in-out;
+    --transition: .3s ease-in-out;
 }
 
 /*
