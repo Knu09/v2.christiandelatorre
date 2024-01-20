@@ -97,15 +97,15 @@ function toggleCircleActive(section, circle) {
 }
 
 
-// PROJECTS
+// ARCHIVES
 let archivedProjectsHTML = '';
 
-archivedProjects.forEach((project, index) => {
+archivedProjects.forEach((archive, index) => {
 
     let linkHTML = '';
     let technologiesHTML = '';
 
-    project.links.forEach(link => {
+    archive.links.forEach(link => {
         linkHTML += `
             <a href="${link.url}" target="_blank">
                 ${link.icon}
@@ -113,7 +113,7 @@ archivedProjects.forEach((project, index) => {
         `
     })
 
-    project.technologies.forEach((item, index) => {
+    archive.technologies.forEach((item, index) => {
         technologiesHTML += `
             <li>${item}</li>
         `
@@ -132,12 +132,12 @@ archivedProjects.forEach((project, index) => {
                     ${linkHTML}
                 </div>
                 <div class="main-header-content">
-                    <a href="${project.websiteLink}" target="_blank">
-                        <h1 class="project-title">${project.title}</h1>
+                    <a href="${archive.websiteLink}" target="_blank">
+                        <h1 class="project-title">${archive.title}</h1>
                     </a>
                 </div>
                 <div class="details-content">
-                    <p class="project-description">${project.description}</p>
+                    <p class="project-description">${archive.description}</p>
                 </div>
             </div>
             <div class="footer-content">
@@ -153,6 +153,69 @@ archivedProjects.forEach((project, index) => {
 })
 
 document.querySelector('.js-archive-grid').innerHTML = archivedProjectsHTML;
+
+// PROJECTS
+
+
+let projectHTML = '';
+
+projects.forEach((project) => {
+    let projectTechUsedHTML = '';
+    let projectLinksHTML = '';
+
+    project.links.forEach((link) => {
+       projectLinksHTML += `
+            <a href="${link.linkURL}" target="_blank">
+                ${link.icon}
+            </a>
+       `
+    })
+
+    project.technologies.forEach((tech) => {
+        projectTechUsedHTML += `
+            <li>${tech}</li>
+        `
+    })
+
+    projectHTML += `
+        <li class="project-inner-content hidden hidden-section">
+            <div class="projects-content project-picture-section">
+                <a target="_blank" href="${project.url}" class="profile-wrapper">
+                    <img src="${project.image}" alt="${project.imageAlt}">
+                </a>
+            </div>
+            <div class="projects-content project-details-section">
+                <div class="header">
+                    <div class="upper-header-content">
+                        <h2 class="project-upper-header">FEATURED PROJECT</h2>
+                    </div>
+                    <div class="main-header-content">
+                        <a target="_blank" href="${project.url}">
+                            <h1 class="project-title">${project.title}</h1>
+                        </a>
+                    </div>
+                    <div class="details-content">
+                        <p class="project-description">${project.description}</p>
+                    </div>
+                    <div class="technologies-used">
+                        <ul>
+                            ${projectTechUsedHTML}
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="project-links">
+                        ${projectLinksHTML}
+                    </div>
+                </div>
+            </div>
+        </li>
+    `
+})
+
+
+document.querySelector('.js-project-grid').innerHTML = projectHTML;
+
 
 // EXPERIENCE
 let experienceHTML = '';

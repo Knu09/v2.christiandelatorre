@@ -45,10 +45,14 @@
     border-radius: 12px;
 }
 
-.project-details-section .header {
+.project-details-section:nth-child(odd) .header {
     display: flex;
     flex-direction: column;
     align-items: end;
+}
+
+.project-details-section:nth-child(even) .header {
+    align-items: start;
 }
 
 
