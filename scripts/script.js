@@ -156,13 +156,13 @@ document.querySelector('.js-archive-grid').innerHTML = archivedProjectsHTML;
 
 // PROJECTS
 
-
 let projectHTML = '';
 
 projects.forEach((project) => {
     let projectTechUsedHTML = '';
     let projectLinksHTML = '';
 
+    console.log(project.url);
     project.links.forEach((link) => {
        projectLinksHTML += `
             <a href="${link.linkURL}" target="_blank">

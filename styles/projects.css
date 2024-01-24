@@ -283,6 +283,16 @@
 #archive .details-content .project-description {
 }
 
+.project-details-section .main-header-content a::before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 @media (max-width: 1000px) {
     .project-inner-content:nth-child(odd) .project-picture-section {
         grid-area: 1 / 1 / -1 / 6;
@@ -333,15 +343,8 @@
         height: 100%;
     }
 
-    .project-details-section .main-header-content a::before {
-        content: "";
-        z-index: 1;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
+
+
 
     .project-picture-section a img {
         height: 100%;
