@@ -86,6 +86,7 @@
 .bar:nth-child(1) {
     top: 0;
     width: 16px;
+    /*transform: translate(-50%, -50%);*/
 }
 
 .bar:nth-child(2) {
@@ -275,13 +276,13 @@ html.active {
     .navbar-toggler.active .bar:nth-child(1) {
         width: 25px;
         top: 50%;
-        transform: translate(-50%, -50%) rotate(45deg);
+        transform: rotate(45deg);
         transition-delay: .15s;
     }
     .navbar-toggler.active .bar:nth-child(3) {
         width: 25px;
         top: 50%;
-        transform: translate(-50%, -50%) rotate(-400deg);
+        transform: rotate(-220deg);
         transition-delay: .25s;
     }
 
