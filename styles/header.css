@@ -291,22 +291,5 @@ html.active {
     }
 }
 
-/*@keyframes animateBar1 {*/
-
-/*    from {*/
-/*        top: 0;*/
-/*        transform: translateY(-50%);*/
-/*    }*/
-/*    */
-/*    !*50% {*!*/
-/*    !*    top: 50%; !important;*!*/
-/*    !*    transform: translateY(-50%); !important;*!*/
-/*    !*}*!*/
-
-/*    to {*/
-/*        transform: translateY(8px) rotate(45deg);*/
-/*    }*/
-
-/*}*/
 
 
