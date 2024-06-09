@@ -3,12 +3,12 @@ const projects = [
         title: 'PERT/CPM Generator',
         description: 'This website provides an efficient tool for evaluating and calculating for project management, this tool help to determine and visualize how much time it will take to complete a specific project.',
         technologies: ['HTML', 'CSS', 'JavaScript', 'D3.js', 'Chart.js'],
-        url: 'https://Knu09.github.io/PERT-CPM-Network/',
+        url: 'https://knu09.github.io/PERT-CPM-Generator/',
         image: 'images/PERTCPM.png',
         imageAlt: 'PERT/CPM and Gantt Chart',
         links: [
             {
-                linkURL: 'https://github.com/Knu09/PERT-CPM-Network',
+                linkURL: 'https://github.com/Knu09/PERT-CPM-Generator',
                 icon: `
                     <svg xmlns="http://www.w3.org/2000/svg" height="22" width="22" viewBox="0 0 496 512">
                         <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -17,7 +17,7 @@ const projects = [
                 `
             },
             {
-                linkURL: 'https://Knu09.github.io/PERT-CPM-Network/',
+                linkURL: 'https://Knu09.github.io/PERT-CPM-Generator/',
                 icon: `
                     <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512">
                         <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->

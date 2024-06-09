@@ -19,8 +19,8 @@
 :root {
     --font-size-5xs: 12px;
     --font-size-4xs: 14px;
-    --font-size-3xs: 1rem;
-    --font-size-2xs: 1.15;
+    --font-size-3xs: 16px;
+    --font-size-2xs: 1.15rem;
     --font-size-xs: 1.25rem;
     --font-size-sm: 1.5rem;
     --font-size-md: 1.75rem;

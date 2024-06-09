@@ -63,7 +63,7 @@
 }
 
 .inner-experience-container .tab-contents .list-item {
-    font-size: clamp(var(--font-size-5xs), 4vw,var(--font-size-4xs)) ;
+    font-size: clamp(var(--font-size-5xs), 4vw,var(--font-size-3xs)) ;
     margin-bottom: 10px;
     color: var(--clr-secondary-semi-white60);
 }

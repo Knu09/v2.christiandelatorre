@@ -35,10 +35,10 @@
 .details-content p {
     color: var(--clr-secondary-semi-white60);
     font-family: Open Sans, serif;
-    font-size: clamp(var(--font-size-5xs), 4vw,var(--font-size-4xs)) ;
+    font-size: clamp(var(--font-size-5xs), 4vw,var(--font-size-3xs)) ;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 28px;
     margin-top: 1rem;
     max-width: 520px;
 }

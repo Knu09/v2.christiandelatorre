@@ -23,6 +23,10 @@
     max-width: none;
 }
 
+#about .details-content {
+    margin-bottom: 32px;
+}
+
 .tab-titles {
     position: relative;
     display: flex;
