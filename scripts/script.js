@@ -120,7 +120,7 @@ archivedProjects.forEach((archive, index) => {
     })
 
     archivedProjectsHTML += `
-    <li class="archive-folder hidden hidden-archives">
+    <li class="archive-folder hidden hidden-archives ${archive.hidden}">
         <div class="folder-contents">
             <div class="header-content">
                 <div class="folder-wrapper">
@@ -301,41 +301,41 @@ const hiddenNav = document.querySelectorAll('.hidden-nav')
 const hiddenMenu = document.querySelector('.hidden-menu')
 
 window.addEventListener('DOMContentLoaded', () => {
-    logoText.classList.add('active');
-    html.classList.add('active');
-    // main.style.display = "block";
+    // logoText.classList.add('active');
+    // html.classList.add('active');
+    // // main.style.display = "block";
+    //
+    // setTimeout(() => {
+    //     logoStroke.classList.add('active');
+    // }, 600)
+    //
+    // setTimeout(() => {
+    //     logoSplash.classList.add('fade-out')
+    //     setTimeout(() => {
+    //         introSection.classList.add('fade-out');
+    //
+    //         hiddenNav.forEach(nav => {
+    //             nav.classList.add('show')
+    //         })
+    //         setTimeout(() => {
+    //             hiddenMenu.classList.add('show')
+    //             logoSplash.style.display = "none";
+    //             introSection.style.display = "none";
+    //             setTimeout(() => {
+    //                 html.classList.remove('active');
+    //             }, 2200)
+    //         }, 1000)
+    //     }, 600)
+    //
+    // }, 3300)
 
-    setTimeout(() => {
-        logoStroke.classList.add('active');
-    }, 600)
 
-    setTimeout(() => {
-        logoSplash.classList.add('fade-out')
-        setTimeout(() => {
-            introSection.classList.add('fade-out');
-
-            hiddenNav.forEach(nav => {
-                nav.classList.add('show')
-            })
-            setTimeout(() => {
-                hiddenMenu.classList.add('show')
-                logoSplash.style.display = "none";
-                introSection.style.display = "none";
-                setTimeout(() => {
-                    html.classList.remove('active');
-                }, 2200)
-            }, 1000)
-        }, 600)
-
-    }, 3300)
-
-
-    // hiddenNav.forEach(nav => {
-    //     nav.classList.add('show')
-    // })
-    // hiddenMenu.classList.add('show')
-    // logoSplash.style.display = "none";
-    // introSection.style.display = "none";
+    hiddenNav.forEach(nav => {
+        nav.classList.add('show')
+    })
+    hiddenMenu.classList.add('show')
+    logoSplash.style.display = "none";
+    introSection.style.display = "none";
 })
 
 
@@ -464,7 +464,7 @@ const observer = new IntersectionObserver((e) => {
             } else if (entry.target.classList.contains('hidden-archives')) {
                 hiddenArchives.forEach((archive, index) => {{
                     setTimeout(() => {
-                        if(entry.isIntersecting) {
+                        if(entry.isIntersecting && !archive.classList.contains('hideArchive')) {
                             archive.classList.add('show')
                         }
                     }, (index + 1) * 200)
@@ -476,3 +476,29 @@ const observer = new IntersectionObserver((e) => {
 
 const hiddenElements = document.querySelectorAll('.hidden')
 hiddenElements.forEach((el) => observer.observe(el))
+
+
+// SHOW MORE AND LESS ARCHIVES
+
+const toggleShowButton = document.getElementById('show-hide-btn')
+const hiddenArchiveFolder = document.querySelectorAll('.hideArchive')
+const toggleShowText = document.querySelector('.show-hide-text')
+
+toggleShowButton.addEventListener('click', () => {
+    hiddenArchiveFolder.forEach((archive, index) => {
+        // archive.classList.toggle
+        setTimeout(() => {
+
+            archive.classList.toggle('moreArchive')
+
+            setTimeout(() => {
+                archive.classList.toggle('show')
+            },  (index + 1) * 200)
+        }, 100)
+    })
+    if (toggleShowText.innerText === "SHOW MORE") {
+        toggleShowText.innerText = "SHOW LESS"
+    } else {
+        toggleShowText.innerText = 'SHOW MORE'
+    }
+})
