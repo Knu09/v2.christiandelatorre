@@ -301,41 +301,41 @@ const hiddenNav = document.querySelectorAll('.hidden-nav')
 const hiddenMenu = document.querySelector('.hidden-menu')
 
 window.addEventListener('DOMContentLoaded', () => {
-    // logoText.classList.add('active');
-    // html.classList.add('active');
-    // // main.style.display = "block";
-    //
-    // setTimeout(() => {
-    //     logoStroke.classList.add('active');
-    // }, 600)
-    //
-    // setTimeout(() => {
-    //     logoSplash.classList.add('fade-out')
-    //     setTimeout(() => {
-    //         introSection.classList.add('fade-out');
-    //
-    //         hiddenNav.forEach(nav => {
-    //             nav.classList.add('show')
-    //         })
-    //         setTimeout(() => {
-    //             hiddenMenu.classList.add('show')
-    //             logoSplash.style.display = "none";
-    //             introSection.style.display = "none";
-    //             setTimeout(() => {
-    //                 html.classList.remove('active');
-    //             }, 2200)
-    //         }, 1000)
-    //     }, 600)
-    //
-    // }, 3300)
+    logoText.classList.add('active');
+    html.classList.add('active');
+    // main.style.display = "block";
+
+    setTimeout(() => {
+        logoStroke.classList.add('active');
+    }, 600)
+
+    setTimeout(() => {
+        logoSplash.classList.add('fade-out')
+        setTimeout(() => {
+            introSection.classList.add('fade-out');
+
+            hiddenNav.forEach(nav => {
+                nav.classList.add('show')
+            })
+            setTimeout(() => {
+                hiddenMenu.classList.add('show')
+                logoSplash.style.display = "none";
+                introSection.style.display = "none";
+                setTimeout(() => {
+                    html.classList.remove('active');
+                }, 2200)
+            }, 1000)
+        }, 600)
+
+    }, 3300)
 
 
-    hiddenNav.forEach(nav => {
-        nav.classList.add('show')
-    })
-    hiddenMenu.classList.add('show')
-    logoSplash.style.display = "none";
-    introSection.style.display = "none";
+    // hiddenNav.forEach(nav => {
+    //     nav.classList.add('show')
+    // })
+    // hiddenMenu.classList.add('show')
+    // logoSplash.style.display = "none";
+    // introSection.style.display = "none";
 })
 
 
