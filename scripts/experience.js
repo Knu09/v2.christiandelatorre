@@ -37,14 +37,15 @@ const experience = [
     {
         isActive: "",
         title: "Web Development",
-        date: "June 2023 - Present",
+        date: "June 2022 - Present",
         lists: [
             `Created proficient <strong>responsive</strong> and <strong>interactive</strong> user interfaces using HTML, CSS, and JavaScript.`,
             `Having intermediate skills in both <strong>front-end</strong> and <strong>back-end development</strong>.`,
             `Having knowledge using <strong>version control systems</strong> like <strong>Git</strong> to track the changes.`,
             `Created a logical user experience by <strong>integrating front-end and back-end components</strong>.`,
             `Understanding the functions of <strong>Bootstrap</strong> to create a responsive mobile designs`,
-            `Studied the fundamentals in <strong>jQuery</strong> to make an easy way to use JavaScript in building an interactive and attractive websites`
+            `Studied the fundamentals in <strong>jQuery</strong> to make an easy way to use JavaScript in building an interactive and attractive websites`,
+            `I have thoroughly studied the comprehensive concepts and functionalities of data visualization which are <strong>D3.js</strong> and <strong>Chart.js</strong>.`
         ]
     },
 
